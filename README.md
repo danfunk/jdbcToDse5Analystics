@@ -5,7 +5,7 @@ To get this working your will need to:
 
   1. Download and unzip the Simba driver from DataStax
      https://academy.datastax.com/downloads/download-drivers
-     Extract this to a directory called simba_libs in the current system.
+     Extract this to a directory called **/simba_libs** right next to this README file.
 
   2. Start up the DSE Analytics demo.
      https://docs.datastax.com/en/datastax_enterprise/4.5/datastax_enterprise/spark/sparkWSDemo.html
