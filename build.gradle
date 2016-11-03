@@ -1,0 +1,22 @@
+group 'SimbaJdbcDSE'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'org.tiaa.Main'
+
+sourceCompatibility = 1.5
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'simba_libs')
+    compile group: 'javax.jdo', name: 'jdo2-api', version: '2.3-eb'
+    compile group: 'org.apache.hive', name: 'hive-service', version: '0.11.0'
+    compile group: 'com.datastax.cassandra',name:'dse-driver', version: '1.1.0'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
